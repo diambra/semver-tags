@@ -1,0 +1,12 @@
+name: 'Semver tags'
+description: 'Action to calculate container image tags based on semver'
+inputs:
+  images:
+    description: 'List of images to tag'
+    required: true
+outputs:
+  tags:
+    description: 'Tags to apply to the image'
+runs:
+  using: 'node16'
+  main: 'index.js'
